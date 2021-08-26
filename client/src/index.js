@@ -13,6 +13,7 @@ import rootReducer from './reducers';
 
 // outil de developpement (dev tools)
 import { composeWithDevTools } from 'redux-devtools-extension';
+import { getPosts } from './actions/post.actions';
 
 
 
@@ -21,6 +22,7 @@ const store = createStore(
 );
 
 store.dispatch(getUsers());
+store.dispatch(getPosts());
 
 
 ReactDOM.render(

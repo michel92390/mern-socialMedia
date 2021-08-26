@@ -31,7 +31,7 @@ function App() {
     // apres avoir verifier que l'utilisateur est connecter, on fait l'action d'aller chercher la data qui correspond a ce uid et on se l'affiche dans notre store
     // on remet uid en parametre comme dans la fonction user.action.js
     if (uid) dispatch(getUser(uid));
-  }, [uid]);
+  }, [uid, dispatch]);
 
   //donc nous a chaque fois que on va appeler dans nimporte quel context on aura la possibilite d'avoir le id de notre utilisateur
   // avec uid
